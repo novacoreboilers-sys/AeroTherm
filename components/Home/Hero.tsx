@@ -50,14 +50,13 @@ export default function Hero() {
 
         <div className="container relative z-10 flex min-h-[400px] items-center py-14 lg:min-h-[410px]">
           <div className="max-w-3xl">
-            <p className="eyebrow mb-3 text-accent">NovaCore Engineering Group</p>
+            <p className="eyebrow mb-3 text-white">AeroTherm Engineering</p>
             <h1 className="heading-xl max-w-3xl uppercase text-white">
               Engineering Beyond Standards
             </h1>
             <p className="body-lg mt-6 max-w-xl text-white/84">
-              Delivering innovative engineering solutions in manufacturing, inspection,
-              industrial services, and EPC projects with a commitment to quality, safety,
-              and global standards.
+              Engineering, automation, industrial chemical supply and sustainable biomass
+              energy solutions—delivered with quality, safety and dependable support.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="#services" className="navy-button">

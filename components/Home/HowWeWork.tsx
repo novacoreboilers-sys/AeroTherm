@@ -1,17 +1,10 @@
 import {
-  BadgeCheck,
-  Factory,
-  FlaskConical,
-  Globe2,
-  Hammer,
+  ArrowUpRight,
   Leaf,
   Medal,
   ShieldCheck,
-  Sparkles,
   Target,
   UsersRound,
-  Wheat,
-  Zap,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -25,18 +18,66 @@ const whyItems = [
 ];
 
 const industries = [
-  { name: "Power Plants", icon: Zap },
-  { name: "Oil & Gas", icon: Factory },
-  { name: "Chemical", icon: FlaskConical },
-  { name: "Textile", icon: Sparkles },
-  { name: "Sugar Mills", icon: Wheat },
-  { name: "Pharmaceutical", icon: ShieldCheck },
-  { name: "Food Processing", icon: BadgeCheck },
-  { name: "Paper Industry", icon: Leaf },
-  { name: "Cement", icon: Factory },
-  { name: "Steel", icon: Medal },
-  { name: "Manufacturing", icon: Globe2 },
-  { name: "Industrial Fabrication", icon: Hammer },
+  {
+    name: "Power Plants",
+    image: "/assets/industries/power-plants.jpg",
+    alt: "High-capacity thermal power generation plant with cooling towers and steam systems",
+  },
+  {
+    name: "Oil & Gas",
+    image: "/assets/industries/oil-and-gas.jpg",
+    alt: "Oil and gas refinery towers and steel process piping at sunset",
+  },
+  {
+    name: "Chemical",
+    image: "/assets/industries/chemical.jpg",
+    alt: "Chemical manufacturing facility with stainless steel vessels and process ducts",
+  },
+  {
+    name: "Textile Mills",
+    image: "/assets/industries/textile-mills.jpg",
+    alt: "Large-scale textile processing factory with dyeing and finishing lines",
+  },
+  {
+    name: "Sugar Mills",
+    image: "/assets/industries/sugar-mills.jpg",
+    alt: "Industrial sugar mill with evaporation vessels and steam boilers",
+  },
+  {
+    name: "Pharmaceutical",
+    image: "/assets/industries/pharmaceutical.jpg",
+    alt: "Pharmaceutical clean room with sanitary stainless steel process systems",
+  },
+  {
+    name: "Food Processing",
+    image: "/assets/industries/food-processing.jpg",
+    alt: "Automated food processing plant with stainless steel production systems",
+  },
+  {
+    name: "Paper & Pulp",
+    image: "/assets/industries/paper-and-pulp.jpg",
+    alt: "High-speed paper mill machinery and industrial drying cylinders",
+  },
+  {
+    name: "Cement Plants",
+    image: "/assets/industries/cement-plants.jpg",
+    alt: "Cement kiln and preheater tower with industrial exhaust systems",
+  },
+  {
+    name: "Steel & Metals",
+    image: "/assets/industries/steel-and-metals.jpg",
+    alt: "Steel mill production area with heavy thermal processing equipment",
+  },
+  {
+    name: "Heavy Manufacturing",
+    image: "/assets/industries/heavy-manufacturing.jpg",
+    alt: "Heavy manufacturing assembly line with cranes and industrial machinery",
+  },
+  {
+    name: "Industrial Fabrication",
+    image: "/assets/industries/industrial-fabrication.jpg",
+    alt: "Industrial fabrication yard with welded steel modules ready for transport",
+  },
 ];
 
 export default function HowWeWork() {
@@ -45,7 +86,7 @@ export default function HowWeWork() {
       <div className="container">
         <div className="grid gap-10 rounded-[8px] border border-white/10 bg-linear-to-br from-navy via-navy-2 to-[#082c58] p-7 text-white shadow-lift lg:grid-cols-[1fr_1.55fr_0.9fr] lg:p-10">
           <div>
-            <p className="eyebrow text-accent">Why Choose NovaCore?</p>
+            <p className="eyebrow text-white">Why Choose AeroTherm?</p>
             <h2 className="mt-2 text-[23px] font-extrabold uppercase leading-tight text-white">
               Industrial partner for safe, reliable engineering
             </h2>
@@ -77,55 +118,52 @@ export default function HowWeWork() {
           </div>
         </div>
 
-        <div className="grid gap-12 py-24 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <div>
-            <p className="eyebrow">Company Introduction</p>
-            <h2 className="heading-lg mt-3 text-navy">Built for Critical Industrial Systems</h2>
-          </div>
-          <div className="space-y-5 text-[16px] leading-[1.85] text-steel">
-            <p>
-              NovaCore Engineering Group is committed to delivering high-quality
-              engineering solutions through innovation, technical excellence, and
-              international engineering standards.
-            </p>
-            <p>
-              Our objective is to become a trusted industrial partner by providing
-              reliable engineering services, advanced manufacturing solutions, and
-              professional inspection services that enhance industrial safety and
-              operational efficiency.
-            </p>
-          </div>
-        </div>
+       
 
-        <div id="industries" className="overflow-hidden rounded-[8px] bg-linear-to-br from-navy via-navy-2 to-primary-1 p-4 text-white shadow-lift md:p-10">
-          <div className="mx-auto mb-9 max-w-3xl text-center">
-            <p className="eyebrow text-accent">Industries We Serve</p>
-            <h3 className="heading-md mt-3 text-white">
-              A Group Platform Built for  Global Industry
-            </h3>
-            <p className="mt-4 text-[14px] leading-relaxed text-white/68">
-              Supporting critical operations across power, process, manufacturing,
-              and export-driven industrial sectors.
+        <div id="industries" className="py-4 lg:py-4 lg-pt-8">
+          <div className="mb-10 mt-10 max-w-3xl">
+            <p className="eyebrow">Cross-Sector Applications</p>
+            <h3 className="heading-lg mt-3 text-navy">Built for Diverse Industrial Environments.</h3>
+            <p className="body-lg mt-4 max-w-2xl text-steel">
+              Our engineering and supply capabilities support critical operations across
+              power, process, manufacturing and energy-intensive industries.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {industries.map((industry) => (
-              <div
+
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-4 lg:grid-cols-4">
+            {industries.map((industry, index) => (
+              <article
                 key={industry.name}
-                className="light-card group flex min-h-32 flex-col items-center justify-center gap-3 rounded-[6px] border border-white/12 bg-white/[0.06] p-5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-all duration-200 hover:-translate-y-1 hover:border-accent/55 hover:bg-white/[0.1] hover:shadow-[0_18px_36px_rgba(0,0,0,0.18)]"
+                className="group relative flex h-52 overflow-hidden rounded-[6px]  bg-navy p-4 shadow-card transition-transform duration-300 hover:-translate-y-1 hover:shadow-lift sm:h-60 sm:p-5"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-primary-1 shadow-[0_10px_24px_rgba(42,167,223,0.2)] transition-transform duration-200 group-hover:scale-105">
-                  <industry.icon className="h-6 w-6 stroke-[1.8]" />
+                <div className="absolute inset-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-[1.035]">
+                  <Image
+                    src={industry.image}
+                    alt={industry.alt}
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+                    className="object-cover"
+                  />
                 </div>
-                <span className="text-[13px] font-extrabold uppercase leading-tight text-white">
-                  {industry.name}
-                </span>
-              </div>
+                <div className="absolute inset-0 bg-linear-to-t from-navy via-navy/55 to-navy/5" />
+                <div className="relative z-10 mt-auto">
+                  <span className="font-mono text-[9px] font-medium uppercase tracking-[0.12em] text-white/66">
+                    {String(index + 1).padStart(2, "0")} 
+                  </span>
+                  <h4 className="mt-1 text-[15px] font-bold leading-tight text-white sm:text-[18px]">
+                    {industry.name}
+                  </h4>
+                  <span className="mt-2 flex items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-accent transition-colors group-hover:text-white">
+                    Explore sector
+                    <ArrowUpRight className="h-3 w-3" />
+                  </span>
+                </div>
+              </article>
             ))}
           </div>
         </div>
 
-        <div className="grid gap-8 pt-14 lg:grid-cols-[1.25fr_0.75fr] lg:items-stretch">
+        {/* <div className="grid gap-8 pt-14 lg:grid-cols-[1.25fr_0.75fr] lg:items-stretch">
           <div className="grid gap-2 md:grid-cols-2">
             {[
               { label: "Vision", icon: Target, text: "To become one of the world's most trusted engineering companies delivering innovative manufacturing, inspection, industrial services, and engineering solutions." },
@@ -156,14 +194,14 @@ export default function HowWeWork() {
           <div className="relative min-h-[420px] overflow-hidden rounded-[8px] shadow-lift">
             <Image
               src="/assets/mission.png"
-              alt="NovaCore industrial engineering team at work"
+              alt="AeroTherm industrial engineering team at work"
               fill
               sizes="(min-width: 1024px) 34vw, 100vw"
-              className="object-cover object-bottom"
+              className="object-cover object-center"
             />
             <div className="absolute inset-0 bg-linear-to-t from-navy/44 via-transparent to-transparent" />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

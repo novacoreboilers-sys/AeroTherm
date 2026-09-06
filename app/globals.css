@@ -39,6 +39,16 @@
     font-family: var(--font-body);
   }
 
+  ::selection {
+    background: var(--color-primary-1);
+    color: #ffffff;
+  }
+
+  ::-moz-selection {
+    background: var(--color-primary-1);
+    color: #ffffff;
+  }
+
   h1,
   h2,
   h3,
@@ -82,12 +92,12 @@
   }
 
   .section-pad {
-    padding-block: 66px;
+    padding-block: 46px;
   }
 
   @media (min-width: 1024px) {
     .section-pad {
-      padding-block: 124px;
+      padding-block: 94px;
     }
   }
 
@@ -302,6 +312,30 @@
     box-shadow: 0 14px 30px rgba(7, 21, 44, 0.22);
   }
 
+  .chatbot-float-button {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-primary-1) 100%);
+    color: #ffffff;
+    box-shadow: 0 14px 30px rgba(7, 21, 44, 0.22);
+    cursor: pointer;
+    transition: transform 160ms ease;
+  }
+
+  .chatbot-float-button:hover {
+    transform: translateY(-2px);
+  }
+
+  .chatbot-float-button:focus-visible {
+    outline: 3px solid rgba(42, 167, 223, 0.32);
+    outline-offset: 3px;
+  }
+
   .whatsapp-wave {
     position: absolute;
     inset: -7px;
@@ -330,6 +364,11 @@
     .whatsapp-float {
       right: 14px;
       bottom: 14px;
+      width: 42px;
+      height: 42px;
+    }
+
+    .chatbot-float-button {
       width: 42px;
       height: 42px;
     }

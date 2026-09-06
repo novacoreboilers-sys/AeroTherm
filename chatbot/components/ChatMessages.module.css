@@ -1,0 +1,30 @@
+.scrollArea {
+  scrollbar-color: #9bb9cf #eef4f8;
+  scrollbar-width: thin;
+}
+
+.scrollArea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollArea::-webkit-scrollbar-track {
+  background: #eef4f8;
+  border-left: 1px solid #dbe5ec;
+}
+
+.scrollArea::-webkit-scrollbar-thumb {
+  min-height: 40px;
+  border: 2px solid #eef4f8;
+  border-radius: 999px;
+  background: #9bb9cf;
+}
+
+.scrollArea::-webkit-scrollbar-thumb:hover {
+  background: #126fb8;
+}
+
+.scrollArea::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}

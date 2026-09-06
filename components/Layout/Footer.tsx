@@ -1,7 +1,7 @@
 import { Factory, Mail, MapPin, Phone } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 
-const links = ["Home", "About Us", "Services", "Industries", "Resources", "Contact Us"];
+const links = ["Home", "About Us", "Services", "Solutions", "Coal Trading", "Industries", "Contact Us"];
 
 export default function Footer() {
   return (
@@ -15,16 +15,16 @@ export default function Footer() {
               </div>
             </div>
             <div className="leading-none">
-              <div className="font-heading text-[22px] font-extrabold tracking-[0.02em]">NOVACORE</div>
+              <div className="font-heading text-[22px] font-extrabold tracking-[0.02em]">AEROTHERM</div>
               <div className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-white/60">
-                Engineering Group
+                Engineering
               </div>
             </div>
           </div>
           <p className="mt-5 max-w-xl text-[14px] leading-relaxed text-white/68">
-            NovaCore Engineering Group delivers innovative engineering solutions in
-            manufacturing, inspection, industrial services, and consultancy with a
-            commitment to quality, safety, and international standards.
+            AeroTherm Engineering delivers integrated engineering, automation,
+            industrial chemical and biomass energy solutions with a commitment to
+            quality, safety and dependable service.
           </p>
         </div>
 
@@ -42,9 +42,9 @@ export default function Footer() {
         <div>
           <h3 className="text-[14px] font-extrabold uppercase">Contact</h3>
           <div className="mt-5 grid gap-4 text-[13px] text-white/70">
-            <a href="mailto:info@novacoregroup.com" className="flex items-center gap-3 hover:text-white">
+            <a href="mailto:info@aerothermengineering.com" className="flex items-center gap-3 hover:text-white">
               <Mail className="h-4 w-4 text-white" />
-              info@novacoregroup.com
+              info@aerothermengineering.com
             </a>
             <a href="tel:+923434101295" className="flex items-center gap-3 hover:text-white">
               <Phone className="h-4 w-4 text-white" />
@@ -66,8 +66,8 @@ export default function Footer() {
 
       <div className="border-t border-white/10 py-5">
         <div className="container flex flex-col gap-2 text-center text-[12px] text-white/52 md:flex-row md:justify-between md:text-left">
-          <span>Copyright 2026. NovaCore Engineering Group.</span>
-          <span>Engineering Beyond Standards</span>
+          <span>Copyright 2026. AeroTherm Engineering.</span>
+          <span>Industrial Solutions. Engineered for Performance.</span>
         </div>
       </div>
     </footer>

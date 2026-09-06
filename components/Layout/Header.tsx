@@ -13,7 +13,8 @@ const navItems = [
   "Home",
   "About Us",
   "Services",
-  "Projects",
+  "Solutions",
+  "Coal Trading",
   "Industries",
   "Contact Us",
 ];
@@ -26,7 +27,7 @@ export default function Header() {
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <span className="flex items-center gap-2">
               <Mail className="h-3.5 w-3.5" />
-              info@novacoregroup.com
+              info@aerothermengineering.com
             </span>
             <span className="flex items-center gap-2">
               <Phone className="h-3.5 w-3.5" />
@@ -50,21 +51,21 @@ export default function Header() {
       </div>
 
       <div className="container flex min-h-14 items-center justify-between gap-4 lg:min-h-16">
-        <a href="#" className="flex items-center gap-3" aria-label="NovaCore Engineering Group home">
+        <a href="#" className="flex items-center gap-3" aria-label="AeroTherm Engineering home">
           <div className="flex h-8 w-10 items-center justify-center rounded-[3px] bg-navy lg:h-10 lg:w-12">
             <Factory className="h-5 w-5 text-white lg:h-6 lg:w-6" strokeWidth={2.2} />
           </div>
           <div className="leading-none">
             <div className="font-heading text-[17px] font-extrabold tracking-[0.02em] text-navy lg:text-[20px]">
-              NOVACORE
+              AEROTHERM
             </div>
             <div className="text-[8px] font-extrabold uppercase tracking-[0.16em] text-steel lg:text-[10px] lg:tracking-[0.18em]">
-              Engineering Group
+              Engineering
             </div>
           </div>
         </a>
 
-        <nav className="hidden items-center gap-8 text-[12px] font-extrabold uppercase text-navy lg:flex">
+        <nav className="hidden items-center gap-5 text-[11px] font-extrabold uppercase text-navy lg:flex xl:gap-7 xl:text-[12px]">
           {navItems.map((item) => (
             <a
               key={item}
@@ -93,10 +94,10 @@ export default function Header() {
               </div>
               <div className="leading-none">
                 <div className="font-heading text-[17px] font-extrabold tracking-[0.02em] text-navy">
-                  NOVACORE
+                  AEROTHERM
                 </div>
                 <div className="text-[8px] font-extrabold uppercase tracking-[0.16em] text-steel">
-                  Engineering Group
+                  Engineering
                 </div>
               </div>
             </div>

@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
-export const BASE_URL = "https://www.novacoregroup.com";
+export const BASE_URL = "https://aerothermengineering.com";
 
 export const seoMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "NovaCore Engineering Group | Engineering Beyond Standards",
-    template: "%s | NovaCore Engineering Group",
+    default: "AeroTherm Engineering | Industrial Engineering & Energy Solutions",
+    template: "%s | AeroTherm Engineering",
   },
   description:
-    "NovaCore Engineering Group delivers boiler manufacturing, boiler and turbine inspection, pressure vessel solutions, EPC services, industrial fabrication, and engineering consultancy.",
+    "AeroTherm Engineering delivers industrial engineering, boiler solutions, automation, instrumentation, industrial chemicals, biomass fuel, coal trading, EPC services, and inspection across Pakistan.",
   keywords: [
-    "NovaCore Engineering Group",
+    "AeroTherm Engineering",
     "boiler inspection",
     "boiler manufacturing",
     "turbine inspection",
@@ -19,9 +19,14 @@ export const seoMetadata: Metadata = {
     "industrial fabrication",
     "EPC solutions",
     "engineering consultancy",
+    "industrial chemicals Pakistan",
+    "PLC SCADA automation Pakistan",
+    "biomass fuel supply Pakistan",
+    "imported coal supplier Pakistan",
+    "local coal bulk supply",
   ],
-  authors: [{ name: "NovaCore Engineering Group" }],
-  creator: "NovaCore Engineering Group",
+  authors: [{ name: "AeroTherm Engineering" }],
+  creator: "AeroTherm Engineering",
   robots: {
     index: true,
     follow: true,
@@ -31,24 +36,24 @@ export const seoMetadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
-    siteName: "NovaCore Engineering Group",
-    title: "NovaCore Engineering Group | Engineering Beyond Standards",
+    siteName: "AeroTherm Engineering",
+    title: "AeroTherm Engineering | Industrial Engineering & Energy Solutions",
     description:
-      "Engineering solutions for boiler manufacturing, inspection, industrial services, EPC projects, and consultancy.",
+      "Engineering, automation, industrial chemical supply and sustainable biomass energy solutions for industry.",
     images: [
       {
-        url: "/assets/og-image.png",
+        url: "/assets/hero_1.png",
         width: 1200,
         height: 630,
-        alt: "NovaCore Engineering Group",
+        alt: "AeroTherm Engineering industrial solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NovaCore Engineering Group | Engineering Beyond Standards",
+    title: "AeroTherm Engineering | Industrial Engineering & Energy Solutions",
     description:
-      "Engineering solutions for boiler manufacturing, inspection, industrial services, EPC projects, and consultancy.",
-    images: ["/assets/og-image.png"],
+      "Engineering, automation, industrial chemical supply and sustainable biomass energy solutions for industry.",
+    images: ["/assets/hero_1.png"],
   },
 };
