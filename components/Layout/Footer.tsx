@@ -42,9 +42,9 @@ export default function Footer() {
               <Mail className="h-4 w-4 text-white" />
               info@aerothermengineering.com
             </a>
-            <a href="tel:+923434101295" className="flex items-center gap-3 hover:text-white">
+<a href="tel:+923035693012" className="flex items-center gap-3 hover:text-white">
               <Phone className="h-4 w-4 text-white" />
-              +92 343 4101295
++92 303 5693012
             </a>
             <span className="flex items-center gap-3">
               <MapPin className="h-4 w-4 text-white" />

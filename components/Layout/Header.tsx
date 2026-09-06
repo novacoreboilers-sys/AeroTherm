@@ -31,7 +31,7 @@ export default function Header() {
             </span>
             <span className="flex items-center gap-2">
               <Phone className="h-3.5 w-3.5" />
-              +92 343 4101295
+              +92 303 5693012
             </span>
             <span className="hidden items-center gap-2 lg:flex">
               <MapPin className="h-3.5 w-3.5" />

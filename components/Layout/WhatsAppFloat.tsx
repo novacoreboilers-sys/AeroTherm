@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 export default function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/923434101295"
+href="https://wa.me/923035693012"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"

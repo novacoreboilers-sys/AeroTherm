@@ -71,7 +71,7 @@ export const chatbotConfig = {
     "Coal trading covers imported coal, local coal, industrial-grade coal, and bulk coal supply with delivery support across Pakistan.",
     "AeroTherm serves textile, food and beverage, paper and packaging, chemical, pharmaceutical, power, oil and gas, water treatment, steel, cement, sugar, rice and flour milling, foundry, brick kiln, and manufacturing operations.",
     "AeroTherm focuses on dependable supply, technical support, safe execution, energy efficiency, competitive pricing, timely delivery, and solutions tailored to each plant’s operating requirements.",
-    "The company’s published contact details are info@aerothermengineering.com and +92 343 4101295, with operations based in Lahore, Pakistan.",
+"The company’s published contact details are info@aerothermengineering.com and +92 303 5693012, with operations based in Lahore, Pakistan.",
     "Pricing, engineering scope, delivery schedules, fuel specifications, and commissioning timelines depend on the project. Offer a technical discussion or quotation instead of inventing figures or guarantees.",
     "Do not promise a fixed response time, price, certification outcome, delivery date, or operating result unless the AeroTherm team has confirmed it.",
   ],

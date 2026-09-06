@@ -18,7 +18,7 @@ const organizationJsonLd = {
   image: `${BASE_URL}${OG_IMAGE}`,
   description: SITE_DESCRIPTION,
   email: "info@aerothermengineering.com",
-  telephone: "+92-343-4101295",
+  telephone: "+92-303-5693012",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lahore",
@@ -30,7 +30,7 @@ const organizationJsonLd = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+92-343-4101295",
+    telephone: "+92-303-5693012",
     contactType: "customer service",
     email: "info@aerothermengineering.com",
     areaServed: "PK",
