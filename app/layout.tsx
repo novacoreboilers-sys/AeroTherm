@@ -14,7 +14,7 @@ const organizationJsonLd = {
   "@id": `${BASE_URL}/#organization`,
   name: SITE_NAME,
   url: BASE_URL,
-  logo: `${BASE_URL}/icon`,
+  logo: `${BASE_URL}/assets/logo.png`,
   image: `${BASE_URL}${OG_IMAGE}`,
   description: SITE_DESCRIPTION,
   email: "info@aerothermengineering.com",

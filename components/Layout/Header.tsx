@@ -1,11 +1,11 @@
 import {
   ChevronDown,
-  Factory,
   Mail,
   Menu,
   MapPin,
   Phone,
 } from "lucide-react";
+import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -51,18 +51,16 @@ export default function Header() {
       </div>
 
       <div className="container flex min-h-14 items-center justify-between gap-4 lg:min-h-16">
-        <a href="#" className="flex items-center gap-3" aria-label="AeroTherm Engineering home">
-          <div className="flex h-8 w-10 items-center justify-center rounded-[3px] bg-navy lg:h-10 lg:w-12">
-            <Factory className="h-5 w-5 text-white lg:h-6 lg:w-6" strokeWidth={2.2} />
-          </div>
-          <div className="leading-none">
-            <div className="font-heading text-[17px] font-extrabold tracking-[0.02em] text-navy lg:text-[20px]">
-              AEROTHERM
-            </div>
-            <div className="text-[8px] font-extrabold uppercase tracking-[0.16em] text-steel lg:text-[10px] lg:tracking-[0.18em]">
-              Engineering
-            </div>
-          </div>
+        <a href="#" className="flex shrink-0 items-center" aria-label="AeroTherm Engineering home">
+          <Image
+            src="/assets/logo.png"
+            alt="AeroTherm Engineering"
+            width={1607}
+            height={412}
+            priority
+            sizes="(min-width: 1024px) 190px, 168px"
+            className="h-auto w-[168px] lg:w-[190px]"
+          />
         </a>
 
         <nav className="hidden items-center gap-5 text-[11px] font-extrabold uppercase text-navy lg:flex xl:gap-7 xl:text-[12px]">
@@ -86,20 +84,15 @@ export default function Header() {
             <span className="sr-only">Open menu</span>
           </SheetTrigger>
           <SheetContent>
-            <div className="mt-2 flex items-center gap-3 border-b border-bordercol pb-5">
-              <div className="relative h-8 w-10 overflow-hidden rounded-[3px] bg-navy">
-                <div className="flex h-full w-full items-center justify-center">
-                  <Factory className="h-5 w-5 text-white" strokeWidth={2.2} />
-                </div>
-              </div>
-              <div className="leading-none">
-                <div className="font-heading text-[17px] font-extrabold tracking-[0.02em] text-navy">
-                  AEROTHERM
-                </div>
-                <div className="text-[8px] font-extrabold uppercase tracking-[0.16em] text-steel">
-                  Engineering
-                </div>
-              </div>
+            <div className="mt-2 border-b border-bordercol pb-5">
+              <Image
+                src="/assets/logo.png"
+                alt="AeroTherm Engineering"
+                width={1607}
+                height={412}
+                sizes="190px"
+                className="h-auto w-[190px]"
+              />
             </div>
 
             <nav className="mt-7 grid gap-2 text-[13px] font-extrabold uppercase text-navy">

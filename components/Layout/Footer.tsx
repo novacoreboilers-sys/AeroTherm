@@ -1,4 +1,5 @@
-import { Factory, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 
 const links = ["Home", "About Us", "Services", "Solutions", "Coal Trading", "Industries", "Contact Us"];
@@ -8,19 +9,14 @@ export default function Footer() {
     <footer className="bg-navy text-white">
       <div className="container grid gap-10 py-12 md:grid-cols-[1.3fr_0.7fr_1fr]">
         <div>
-          <div className="flex items-center gap-3">
-            <div className="relative h-11 w-13 overflow-hidden rounded-[3px] bg-white">
-              <div className="flex h-full w-full items-center justify-center bg-white">
-                <Factory className="h-6 w-6 text-navy" strokeWidth={2.2} />
-              </div>
-            </div>
-            <div className="leading-none">
-              <div className="font-heading text-[22px] font-extrabold tracking-[0.02em]">AEROTHERM</div>
-              <div className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-white/60">
-                Engineering
-              </div>
-            </div>
-          </div>
+          <Image
+            src="/assets/logo-dark.png"
+            alt="AeroTherm Engineering"
+            width={1610}
+            height={412}
+            sizes="(min-width: 768px) 270px, 230px"
+            className="h-auto w-[230px] md:w-[270px]"
+          />
           <p className="mt-5 max-w-xl text-[14px] leading-relaxed text-white/68">
             AeroTherm Engineering delivers integrated engineering, automation,
             industrial chemical and biomass energy solutions with a commitment to
