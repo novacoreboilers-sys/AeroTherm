@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
 
 export const BASE_URL = "https://aerothermengineering.com";
+export const SITE_NAME = "AeroTherm Engineering";
+export const SITE_DESCRIPTION =
+  "AeroTherm Engineering delivers industrial engineering, boiler solutions, automation, instrumentation, industrial chemicals, biomass fuel, coal trading, EPC services, and inspection across Pakistan.";
+export const OG_IMAGE = "/assets/og-image.png";
+
+const googleSiteVerification = process.env.GOOGLE_SITE_VERIFICATION;
 
 export const seoMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  applicationName: SITE_NAME,
   title: {
     default: "AeroTherm Engineering | Industrial Engineering & Energy Solutions",
     template: "%s | AeroTherm Engineering",
   },
-  description:
-    "AeroTherm Engineering delivers industrial engineering, boiler solutions, automation, instrumentation, industrial chemicals, biomass fuel, coal trading, EPC services, and inspection across Pakistan.",
+  description: SITE_DESCRIPTION,
   keywords: [
     "AeroTherm Engineering",
     "boiler inspection",
@@ -25,13 +31,29 @@ export const seoMetadata: Metadata = {
     "imported coal supplier Pakistan",
     "local coal bulk supply",
   ],
-  authors: [{ name: "AeroTherm Engineering" }],
-  creator: "AeroTherm Engineering",
+  authors: [{ name: SITE_NAME, url: BASE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  category: "Industrial Engineering",
+  referrer: "origin-when-cross-origin",
+  alternates: {
+    canonical: "/",
+  },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
+  verification: googleSiteVerification
+    ? { google: googleSiteVerification }
+    : undefined,
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -42,10 +64,11 @@ export const seoMetadata: Metadata = {
       "Engineering, automation, industrial chemical supply and sustainable biomass energy solutions for industry.",
     images: [
       {
-        url: "/assets/hero_1.png",
-        width: 1200,
-        height: 630,
+        url: OG_IMAGE,
+        width: 1905,
+        height: 877,
         alt: "AeroTherm Engineering industrial solutions",
+        type: "image/png",
       },
     ],
   },
@@ -54,6 +77,6 @@ export const seoMetadata: Metadata = {
     title: "AeroTherm Engineering | Industrial Engineering & Energy Solutions",
     description:
       "Engineering, automation, industrial chemical supply and sustainable biomass energy solutions for industry.",
-    images: ["/assets/hero_1.png"],
+    images: [OG_IMAGE],
   },
 };
