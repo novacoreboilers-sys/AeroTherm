@@ -4,7 +4,7 @@ export const BASE_URL = "https://aerothermengineering.com";
 export const SITE_NAME = "AeroTherm Engineering";
 export const SITE_DESCRIPTION =
   "AeroTherm Engineering delivers industrial engineering, boiler solutions, automation, instrumentation, industrial chemicals, biomass fuel, coal trading, EPC services, and inspection across Pakistan.";
-export const OG_IMAGE = "/assets/og-image.png";
+export const OG_IMAGE = "/assets/ogimage.png";
 
 const googleSiteVerification = process.env.GOOGLE_SITE_VERIFICATION;
 
