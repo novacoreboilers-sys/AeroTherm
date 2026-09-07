@@ -6,8 +6,9 @@ import {
   Phone,
 } from "lucide-react";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { SOCIAL_LINKS } from "@/app/lib/config";
 
 const navItems = [
   "Home",
@@ -17,6 +18,14 @@ const navItems = [
   "Coal Trading",
   "Industries",
   "Contact Us",
+];
+
+const socialItems = [
+  { label: "LinkedIn", href: SOCIAL_LINKS.linkedin, icon: FaLinkedinIn },
+  { label: "Facebook", href: SOCIAL_LINKS.facebook, icon: FaFacebookF },
+  { label: "Instagram", href: SOCIAL_LINKS.instagram, icon: FaInstagram },
+  { label: "YouTube", href: SOCIAL_LINKS.youtube, icon: FaYoutube },
+  { label: "X", href: SOCIAL_LINKS.x, icon: FaXTwitter },
 ];
 
 export default function Header() {
@@ -39,10 +48,18 @@ export default function Header() {
             </span>
           </div>
           <div className="hidden items-center gap-4 lg:flex">
-            <FaLinkedinIn className="h-3.5 w-3.5" />
-            <FaFacebookF className="h-3.5 w-3.5" />
-            <FaInstagram className="h-3.5 w-3.5" />
-            <FaYoutube className="h-3.5 w-3.5" />
+            {socialItems.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Open AeroTherm Engineering on ${label}`}
+                className="transition-colors hover:text-white/70"
+              >
+                <Icon className="h-3.5 w-3.5" />
+              </a>
+            ))}
             <a href="#contact" className="navy-button min-h-8 px-4 text-[11px]">
               Request a Quote
             </a>

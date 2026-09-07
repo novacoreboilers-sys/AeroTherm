@@ -1,8 +1,17 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { SOCIAL_LINKS } from "@/app/lib/config";
 
 const links = ["Home", "About Us", "Services", "Solutions", "Coal Trading", "Industries", "Contact Us"];
+
+const socialItems = [
+  { label: "LinkedIn", href: SOCIAL_LINKS.linkedin, icon: FaLinkedinIn },
+  { label: "Facebook", href: SOCIAL_LINKS.facebook, icon: FaFacebookF },
+  { label: "Instagram", href: SOCIAL_LINKS.instagram, icon: FaInstagram },
+  { label: "YouTube", href: SOCIAL_LINKS.youtube, icon: FaYoutube },
+  { label: "X", href: SOCIAL_LINKS.x, icon: FaXTwitter },
+];
 
 export default function Footer() {
   return (
@@ -52,10 +61,18 @@ export default function Footer() {
             </span>
           </div>
           <div className="mt-6 flex gap-4 text-white">
-            <FaLinkedinIn className="h-4 w-4" />
-            <FaFacebookF className="h-4 w-4" />
-            <FaInstagram className="h-4 w-4" />
-            <FaYoutube className="h-4 w-4" />
+            {socialItems.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Open AeroTherm Engineering on ${label}`}
+                className="transition-colors hover:text-white/70"
+              >
+                <Icon className="h-4 w-4" />
+              </a>
+            ))}
           </div>
         </div>
       </div>

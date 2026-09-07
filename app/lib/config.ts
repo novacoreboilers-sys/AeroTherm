@@ -5,6 +5,13 @@ export const SITE_NAME = "AeroTherm Engineering";
 export const SITE_DESCRIPTION =
   "AeroTherm Engineering delivers industrial engineering, boiler solutions, automation, instrumentation, industrial chemicals, biomass fuel, coal trading, EPC services, and inspection across Pakistan.";
 export const OG_IMAGE = "/assets/ogimage.png";
+export const SOCIAL_LINKS = {
+  youtube: "https://www.youtube.com/@Aerothermengineering",
+  x: "https://x.com/aerothermeng?s=11",
+  linkedin: "https://www.linkedin.com/in/aerotherm-engineering-146b55434",
+  instagram: "https://www.instagram.com/aerothermengineeringpvt.ltd",
+  facebook: "https://www.facebook.com/share/1Bq3p3Knr3/?mibextid=wwXIfr",
+} as const;
 
 const googleSiteVerification = process.env.GOOGLE_SITE_VERIFICATION;
 

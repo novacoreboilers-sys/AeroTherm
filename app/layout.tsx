@@ -2,7 +2,7 @@
 import "./globals.css";
 import "lenis/dist/lenis.css";
 import { body_font, heading_font, dm_mono } from "./lib/fonts"
-import { BASE_URL, OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, seoMetadata } from "./lib/config";
+import { BASE_URL, OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SOCIAL_LINKS, seoMetadata } from "./lib/config";
 import { cn } from "@/lib/utils";
 import SmoothScroll from "@/components/Motion/SmoothScroll";
 
@@ -19,6 +19,7 @@ const organizationJsonLd = {
   description: SITE_DESCRIPTION,
   email: "info@aerothermengineering.com",
   telephone: "+92-303-5693012",
+  sameAs: Object.values(SOCIAL_LINKS),
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lahore",
