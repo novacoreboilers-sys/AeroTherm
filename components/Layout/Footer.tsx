@@ -53,7 +53,7 @@ export default function Footer() {
             </a>
 <a href="tel:+923035693012" className="flex items-center gap-3 hover:text-white">
               <Phone className="h-4 w-4 text-white" />
-+92 303 5693012
++92 3035639012
             </a>
             <span className="flex items-center gap-3">
               <MapPin className="h-4 w-4 text-white" />

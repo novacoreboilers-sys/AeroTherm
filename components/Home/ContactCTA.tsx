@@ -125,7 +125,7 @@ export default function ContactCTA() {
             </a>
 <a href="tel:+923035693012" className="flex items-center gap-4 border border-white bg-white p-4 transition hover:border-primary-2/24 hover:shadow-card">
               <Phone className="h-5 w-5 text-primary-2" />
-<span><span className="block text-[10px] font-extrabold uppercase tracking-[0.08em] text-steel">Engineering hotline</span><span className="mt-1 block text-[12px] font-bold text-navy">+92 303 5693012</span></span>
+<span><span className="block text-[10px] font-extrabold uppercase tracking-[0.08em] text-steel">Engineering hotline</span><span className="mt-1 block text-[12px] font-bold text-navy">+92 3035639012</span></span>
             </a>
             <div className="flex items-center gap-4 border border-white bg-white p-4">
               <MapPin className="h-5 w-5 text-primary-2" />
