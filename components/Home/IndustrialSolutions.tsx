@@ -87,7 +87,6 @@ export default function IndustrialSolutions() {
                   sizes="(min-width: 1024px) 33vw, 100vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-navy via-navy/18 to-transparent" />
                 <div className="absolute inset-x-5 bottom-4 flex items-end justify-between gap-4">
                 
                   <span className="font-mono text-[12px] font-bold tracking-[0.16em] text-white/72">

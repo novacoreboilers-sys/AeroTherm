@@ -9,6 +9,8 @@ import {
   Landmark,
   Settings,
   ShieldCheck,
+  Snowflake,
+  Sun,
 } from "lucide-react";
 
 const services = [
@@ -66,6 +68,18 @@ const services = [
     icon: ShieldCheck,
     image: "/assets/service9.png",
   },
+  {
+    title: "HVAC Solutions",
+    text: "Complete HVAC design, installation, commissioning, ventilation, air distribution, maintenance, and energy optimization.",
+    icon: Snowflake,
+    image: "/assets/service11.png",
+  },
+  {
+    title: "Solar Installation Services",
+    text: "Reliable solar installation solutions tailored to commercial and industrial energy requirements.",
+    icon: Sun,
+    image: "/assets/service_10.png",
+  },
 ];
 
 export default function Services() {
@@ -100,7 +114,7 @@ export default function Services() {
                 <h3 className="text-[16px] font-extrabold uppercase leading-tight text-navy">
                   {service.title}
                 </h3>
-                <p className="mt-4 min-h-[54px] text-[13px] leading-relaxed text-steel">{service.text}</p>
+                <p className="mt-4 mb-4 min-h-[54px] text-[13px] leading-relaxed text-steel">{service.text}</p>
               </div>
             </article>
           ))}

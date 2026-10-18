@@ -6,8 +6,9 @@ import { useEffect } from "react";
 export default function SmoothScroll() {
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const isWindows = /Windows/i.test(navigator.userAgent);
 
-    if (prefersReducedMotion.matches) return;
+    if (!isWindows || prefersReducedMotion.matches) return;
 
     const lenis = new Lenis({
       autoRaf: true,

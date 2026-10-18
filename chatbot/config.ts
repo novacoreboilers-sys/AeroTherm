@@ -42,8 +42,8 @@ export const chatbotConfig = {
     brandInitial: "A",
   },
   scope: {
-    description: "AeroTherm Engineering, industrial boilers, pressure vessels, heat exchangers, industrial fabrication, EPC projects, engineering consultancy, inspection and certification, plant shutdown support, automation, PLC, SCADA, HMI, boiler instrumentation, industrial chemicals, biomass fuel, coal trading, and the visitor’s current industrial inquiry",
-    outOfScopeReply: "I’m here to help with AeroTherm Engineering’s industrial services and your project inquiry. I can guide you on boilers, fabrication, automation, chemicals, biomass, coal supply, inspections, or related engineering needs.",
+    description: "AeroTherm Engineering, industrial boilers, pressure vessels, heat exchangers, industrial fabrication, EPC projects, engineering consultancy, inspection and certification, plant shutdown support, HVAC solutions, solar installation services, automation, PLC, SCADA, HMI, boiler instrumentation, industrial chemicals, biomass fuel, coal trading, and the visitor’s current industrial inquiry",
+    outOfScopeReply: "I’m here to help with AeroTherm Engineering’s industrial services and your project inquiry. I can guide you on boilers, fabrication, HVAC, solar installations, automation, chemicals, biomass, coal supply, inspections, or related engineering needs.",
   },
   starterPrompts: ["I need a boiler solution", "I need automation support", "I need industrial fuel"],
   questions: [
@@ -56,13 +56,15 @@ export const chatbotConfig = {
       choices: [
         "Boilers & Steam Systems", "Pressure Vessels & Heat Exchangers", "Industrial Fabrication & EPC",
         "Automation, PLC & Instrumentation", "Industrial Chemicals", "Biomass Fuel Supply", "Coal Trading",
-        "Inspection, Consultancy & Shutdowns", "Other / Not sure",
+        "HVAC Solutions", "Solar Installation Services", "Inspection, Consultancy & Shutdowns", "Other / Not sure",
       ],
     },
   ] satisfies readonly ChatQuestion[],
   knowledge: [
     "AeroTherm Engineering is an industrial engineering and supply company serving clients across Pakistan from Lahore.",
     "Core engineering work includes industrial boiler manufacturing, pressure vessel manufacturing, heat exchanger manufacturing, industrial fabrication, EPC solutions, engineering consultancy, plant shutdown services, and third-party inspection.",
+    "HVAC solutions include air conditioning and cooling systems; industrial ventilation and exhaust systems; HVAC for factories and industrial facilities; AHUs, FCUs, chillers, and package units; HVAC design and load calculations; ducting and air distribution systems; installation and commissioning; preventive and corrective maintenance; and HVAC energy optimization.",
+    "Solar installation services are available for commercial and industrial energy requirements.",
     "Boiler and steam services cover industrial steam requirements, boiler automation, burner management systems, control panels, instrumentation, efficiency improvement, inspection, and certification support.",
     "Automation services include PLC programming and commissioning, SCADA development and monitoring, HMI configuration, MCC, PCC and PLC panels, VFD installation, process integration, preventive maintenance, troubleshooting, retrofits, and system upgrades.",
     "Instrumentation services cover temperature, pressure, flow, and level measurement and control, plus instrument installation and calibration.",
